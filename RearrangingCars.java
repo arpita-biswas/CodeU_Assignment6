@@ -74,7 +74,7 @@ public class RearrangingCars {
      *     of the car that is expected in that slot (using inverse mapping), (let us call it "move_from").
      *     i) If "move_from" is SAME as "empty_slot" (current and expected both have the same empty slot index),
      *        then, select a random index (where the car parked differs from expected) and make it "move_from".
-     *        Then, go to step (2c).
+     *        Then, go to step (3).
      *  3. Make a move from move_from index to empty_slot index, and update the current rearrangement.
      *  4. Repeat until the current rearrangement becomes same as that of the expected rearrangement.
      * 
