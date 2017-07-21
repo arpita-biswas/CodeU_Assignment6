@@ -18,5 +18,6 @@ The input to your function is two arrays, each with a permutation of the numbers
      D. Repeat until the current rearrangement becomes same as that of the expected rearrangement.  
 4. Return the required steps as a String.   
 
-## Time Complexity: O(n) where n is the number of parking slots available.
+## Time Complexity: 
+O(n) where n is the number of parking slots available.
 
