@@ -219,7 +219,21 @@ public class Tests {
         assertTrue(expectedStepsString.toString().contains(resultSteps));
     } 
     
-    
+    //Test Example
+    @Test
+    public void test_Example() throws RearrangementExceptions {
+        int [] initial = {1,2,0,3};
+        int [] expected = {3,1,2,0};
+        
+        ArrayList<Step> steps = new ArrayList<Step>();
+        steps.add(new Step(1,2));
+        steps.add(new Step(0,1));
+        steps.add(new Step(3,0));
+        
+        String resultSteps = RearrangingCars.rearrangingSteps(initial, expected);
+        
+        assertEquals(steps.toString(), resultSteps);
+    }
 
     public static void main(String[] args) {
         Result result = JUnitCore.runClasses(Tests.class);
